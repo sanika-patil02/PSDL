@@ -1,0 +1,66 @@
+//4. Write an Embedded C program for sorting the numbers in ascending and descending order.
+
+//1.Ascending
+#include <xc.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<pic18f4550.h>
+
+void main(void) {
+    int i,j,n;
+    int num[]={8,4,2,10,5};
+    for(i=0;i<5;i++){
+        for(j=0;j<4;j++){
+            if(num[j]>num[j+1]);
+            n=num[j];
+            num[j]=num[j+1];
+            num[j+1]=n;
+    }
+    }
+    
+    TRISD=0;
+    for(i=0;i<5;i++){
+        PORTD=num[i];
+        
+        for(int l=0;l<1000;l++){
+            for(int k=0;k<300;k++){
+            }
+        }
+    }
+    return;
+}
+
+
+
+//2.Descending
+#include <xc.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<pic18f4550.h>
+
+void main(void) {
+    int num[]={2,4,1,10,5};
+    for(int i=0;i<5;i++){
+        for(int j=0;j<4;j++){
+            if(num[j]>num[j+1]){
+                int n=num[j];
+                num[j]=num[j+1];
+                num[j+1]=n;
+    }
+    }
+    }
+    
+    TRISD=0;    //here 0 is for output,if it is 1 then it is input
+    for(int i=4;i>=0;i--){
+        PORTD=num[i];
+        
+        for(int l=0;l<1000;l++){
+            for(int k=0;k<300;k++){
+                
+            }
+    }
+   }
+    return;
+}
+
+
